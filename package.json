@@ -1,0 +1,22 @@
+{
+  "name": "pi-helm",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "The pi extension that closes the gap to droid-class coding agents: web search and fetch today, autonomy-level permissions next.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "find test -name '*.test.ts' -print0 | xargs -0 node --test --experimental-strip-types"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "typebox": "*",
+    "typescript": "5.9.2"
+  }
+}
